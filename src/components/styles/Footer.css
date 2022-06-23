@@ -1,6 +1,119 @@
 .Footer {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #0e0e0e;
+}
+
+.Footer-content {
   /* Footer */
   position: relative;
   width: 1323px;
   height: 310px;
+}
+
+.footer-logo {
+  position: absolute;
+  left: 3.7%;
+  right: 89.64%;
+  top: 20.97%;
+  bottom: 70.97%;
+}
+
+.footer-menu {
+  /* Frame 14 */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+
+  position: absolute;
+  left: 18.94%;
+  right: 45%;
+  top: 24.52%;
+  bottom: 69.68%;
+}
+
+.nav-menu-link {
+  /* CTA(Book) */
+
+  font-family: "Maison Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  /* FWhite */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.footer-infos {
+  /* Frame 14 */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 36px;
+
+  position: absolute;
+  left: 3.71%;
+  right: 28.71%;
+  top: 65.16%;
+  bottom: 29.03%;
+}
+
+.footer-infos div {
+  /* CTA(Book) */
+  /* font-family: "Maison Neue"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #808080;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.copyright {
+  /* © 2022 Dept Agency */
+  position: absolute;
+  left: 83.48%;
+  right: 1.03%;
+  top: 65.16%;
+  bottom: 29.03%;
+
+  /* CTA(Book) */
+  font-family: "Maison Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #808080;
+}
+
+hr {
+  position: absolute;
+  left: 2.95%;
+  right: 2.9%;
+  top: 50%;
+  bottom: 50%;
+
+  border: 1px solid #3e3e3e;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
