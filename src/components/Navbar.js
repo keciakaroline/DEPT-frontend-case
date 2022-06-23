@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import NavMenu from "./NavMenu";
 
@@ -7,113 +7,103 @@ import DeptLogo from "./styles/design/DEPT-LOGO-White.svg";
 import menuDot from "./styles/design/menu-dot.svg";
 import menuX from "./styles/design/menu-x.svg";
 
-export default function Navbar({ click, setClick }) {
+export default function Navbar() {
+  const [navBarOpen, setNavBarOpen] = useState(false);
+
   const handleClick = () => {
-    setClick(!click);
+    setNavBarOpen(!navBarOpen);
   };
 
-  const closeClick = () => {
-    setClick(false);
+  const closeMenu = () => {
+    setNavBarOpen(false);
   };
 
   return (
-    <div className={click ? "main-container" : ""} onClick={() => closeClick()}>
-      <nav className="navbar" onClick={(e) => e.stopPropagation()}>
-        <div className="nav-container">
-          <span className="nav-logo">
-            <img src={DeptLogo} alt="DEPT logo white"></img>
-          </span>
-
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
+    <>
+      <nav className="navbar">
+        <span className="nav-logo">
+          <img src={DeptLogo} alt="DEPT logo white"></img>
+        </span>
+        <div className="nav-menu-out">
+          <ul className={`nav-menu ${navBarOpen ? "showMenu" : ""}`}>
+            <li>
               <NavLink
                 exact
                 to="/"
                 className="nav-link"
-                onClick={click ? handleClick : null}
+                onClick={() => closeMenu()}
                 activeClassName="active"
               >
                 WORK
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
                 exact
                 to="/"
                 className="nav-link"
-                onClick={click ? handleClick : null}
+                onClick={() => closeMenu()}
                 activeClassName="active"
               >
                 CULTURE
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
                 exact
                 to="/"
                 className="nav-link"
-                onClick={click ? handleClick : null}
+                onClick={() => closeMenu()}
                 activeClassName="active"
               >
                 SERVICES
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
                 exact
                 to="/"
                 className="nav-link"
-                onClick={click ? handleClick : null}
+                onClick={() => closeMenu()}
                 activeClassName="active"
               >
                 INSIGHTS
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
                 exact
                 to="/"
                 className="nav-link"
-                onClick={click ? handleClick : null}
+                onClick={() => closeMenu()}
                 activeClassName="active"
               >
                 CAREERS
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
                 exact
                 to="/"
                 className="nav-link"
-                onClick={click ? handleClick : null}
+                onClick={() => closeMenu()}
                 activeClassName="active"
               >
                 CONTACT
               </NavLink>
             </li>
-          </ul>
-          <div
-            onClick={handleClick}
-            className={click ? "nav-dropdown active" : "nav-dropdown"}
-          >
-            {/* nao consigo colocar pra mostrar o x */}
-            <img src={menuDot} alt="menu dots when closed"></img>
-            <a>
-              <NavMenu click={click} setClick={setClick} />
-            </a>
-            {/*             
-            <i
-              className={
-                click ? (
-                  <img src={menuDot} alt="menu dots when closed"></img>
+            <li>
+              <button onClick={handleClick} className="btn-menu">
+                {navBarOpen ? (
+                  <img src={menuX} alt=""></img>
                 ) : (
-                  <img src={menuX} alt="menu x when opened"></img>
-                )
-              }
-            ></i> */}
-          </div>
+                  <img src={menuDot} alt=""></img>
+                )}
+              </button>
+            </li>
+          </ul>
         </div>
       </nav>
-    </div>
+    </>
   );
 }
