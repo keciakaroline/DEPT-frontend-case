@@ -1,0 +1,101 @@
+.main-container {
+}
+
+.navbar {
+  /* NavBar */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 426px;
+
+  position: relative;
+  width: 1440px;
+  height: 115px;
+
+  /* Black */
+  background: #121212;
+}
+
+.nav-logo img {
+  position: absolute;
+  width: 88.04px;
+  height: 25px;
+  left: 55.28px;
+  top: 45px;
+}
+
+.nav-menu {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 96px;
+  width: 815.4px;
+  height: 18px;
+
+  /* Inside auto layout */
+  /* flex: none;
+  order: 1;
+  flex-grow: 0; */
+}
+
+.nav-menu .nav-item {
+  /* Auto layout */
+  /* display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 48px;
+  width: 689px;
+  height: 18px; */
+
+  /* Inside auto layout */
+  /* flex: none;
+  order: 0;
+  flex-grow: 0; */
+}
+
+.nav-item .nav-link {
+  /* font-family: "Maison Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px; */
+  /* identical to box height */
+  text-decoration-line: underline;
+
+  /* FWhite */
+  color: #ffffff;
+
+  /* Inside auto layout */
+  /* flex: none;
+  order: 0;
+  flex-grow: 0; */
+}
+
+.nav-dropdown a {
+  /* DesktopMenu */
+  display: none;
+}
+
+.nav-dropdown.active {
+  /* DesktopMenu */
+  position: relative;
+  width: 1440px;
+  height: 837px;
+  color: white;
+
+  background: #0c0c0c;
+}
+
+.nav-dropdown img {
+  position: absolute;
+  left: 95%;
+  right: 3.84%;
+  top: 5.5%;
+  bottom: 92.5%;
+}
