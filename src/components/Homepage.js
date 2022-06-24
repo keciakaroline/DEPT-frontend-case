@@ -14,7 +14,6 @@ import "./styles/Homepage.css";
 export default function Homepage() {
   return (
     <div className="homepage">
-      {/* <Navbar /> */}
       <Hero />
       <ClientCard />
       <ClientCard2 />
@@ -22,7 +21,7 @@ export default function Homepage() {
       <ClientCard3 />
       <ClientList />
       <FormContact />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
