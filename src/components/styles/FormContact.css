@@ -1,0 +1,178 @@
+.contact-out {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 72px 48px;
+  gap: 32px;
+  position: relative;
+  width: 1440px;
+  height: 438px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 64px;
+  width: 1344px;
+  height: 294px;
+}
+
+.contact .contact-hero {
+  width: 305px;
+  height: 185px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 80px;
+  color: #121212;
+}
+
+form {
+  width: 628px;
+  height: 294px;
+  margin-top: 10px;
+}
+
+form .text-name-email {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 38px;
+  position: absolute;
+  width: 628px;
+  height: 74px;
+  left: 420px;
+  top: 10px;
+
+  margin-top: 30px;
+  padding-top: 40px;
+}
+
+/* NAME */
+form .text-name-email .text-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 7px;
+  width: 295px;
+  height: 74px;
+}
+
+form .text-name-email .text-name label {
+  width: 45px;
+  height: 18px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+form .text-name-email .text-name input,
+form .text-name-email .text-email input {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  width: 295px;
+}
+
+form .text-message input {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  width: 295px;
+  height: 300px;
+}
+
+form .text-name-email .text-name input:focus,
+form .text-name-email .text-email input:focus,
+form .text-message input:focus {
+  outline: none;
+}
+/* EMAIL */
+form .text-name-email .text-email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 7px;
+  width: 295px;
+  height: 74px;
+}
+
+form .text-name-email .text-email label {
+  width: 46px;
+  height: 18px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+p {
+  color: red;
+}
+
+form .text-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 38px;
+
+  position: absolute;
+  width: 295px;
+  height: 120px;
+  left: 420px;
+  top: 170px;
+}
+
+form .text-message label {
+  width: 73px;
+  height: 18px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+button.btn-form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 64px;
+  gap: 10px;
+
+  position: absolute;
+  width: 175px;
+  height: 50px;
+  left: 420px;
+  top: 360px;
+  border: 1px solid #121212;
+  border-radius: 50px;
+  transition: background-color 0.7s linear;
+  background-color: transparent;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #121212;
+}
+
+.btn-form:hover {
+  background-color: black;
+  color: white;
+  text-decoration: underline;
+  font-weight: 500;
+}
