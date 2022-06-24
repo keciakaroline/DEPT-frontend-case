@@ -1,24 +1,24 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 
-import { imagesSet1 } from "./ClientCardData";
-import { imagesSet2 } from "./ClientCardData";
+import { imagesSet5 } from "./ClientCardData";
+import { imagesSet6 } from "./ClientCardData";
 import btnDot from "./styles/design/btn-dot.svg";
-import "./styles/ClientCard.css";
+import "./styles/ClientCard3.css";
 
-export default function ClientCard() {
+export default function ClientCard3() {
   return (
     <div className="client-cards-out">
       <Carousel fade={true} pause={false} className="client-card-set-one">
         <Carousel.Item interval={2000}>
           <img
             className="img-set-one"
-            src={imagesSet1[0].img}
-            alt="People playing in the water"
+            src={imagesSet5[0].img}
+            alt="Two man writing in the whiteboard"
           />
           <Carousel.Caption className="legends">
-            <p>{imagesSet1[0].brand}</p>
-            <h2>{imagesSet1[0].title}</h2>
+            <p>{imagesSet5[0].brand}</p>
+            <h2>{imagesSet5[0].title}</h2>
             <div className="read-more">
               <img
                 src={btnDot}
@@ -32,12 +32,12 @@ export default function ClientCard() {
         <Carousel.Item interval={2000}>
           <img
             className="img-set-one"
-            src={imagesSet1[1].img}
-            alt="People speaking about numbers"
+            src={imagesSet5[1].img}
+            alt="Books over each other"
           />
           <Carousel.Caption className="legends">
-            <p>{imagesSet1[1].brand}</p>
-            <h2>{imagesSet1[1].title}</h2>
+            <p>{imagesSet5[1].brand}</p>
+            <h2>{imagesSet5[1].title}</h2>
             <div className="read-more">
               <img
                 src={btnDot}
@@ -52,10 +52,14 @@ export default function ClientCard() {
 
       <Carousel pause={false} fade={true} className="client-card-set-two">
         <Carousel.Item interval={2000}>
-          <img className="img-set-two" src={imagesSet2[0].img} alt="Lamps" />
+          <img
+            className="img-set-two"
+            src={imagesSet6[0].img}
+            alt="Some servers computers"
+          />
           <Carousel.Caption className="legends">
-            <p>{imagesSet2[0].brand}</p>
-            <h2>{imagesSet2[0].title}</h2>
+            <p>{imagesSet6[0].brand}</p>
+            <h2>{imagesSet6[0].title}</h2>
             <div className="read-more">
               <img
                 src={btnDot}
@@ -69,12 +73,12 @@ export default function ClientCard() {
         <Carousel.Item interval={2000}>
           <img
             className="img-set-two"
-            src={imagesSet2[1].img}
-            alt="Girl looking to a picture at the wall"
+            src={imagesSet6[1].img}
+            alt="Different kinds of protein drinks and yogurt"
           />
           <Carousel.Caption className="legends">
-            <p>{imagesSet2[1].brand}</p>
-            <h2>{imagesSet2[1].title}</h2>
+            <p>{imagesSet6[1].brand}</p>
+            <h2>{imagesSet6[1].title}</h2>
             <div className="read-more">
               <img
                 src={btnDot}
