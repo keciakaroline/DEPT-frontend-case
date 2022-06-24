@@ -1,5 +1,13 @@
 body {
-  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 0px;
+
+  position: absolute;
   width: 1440px;
-  height: 115px;
+  height: 7269px;
+  left: 0px;
+  top: 0px;
 }
