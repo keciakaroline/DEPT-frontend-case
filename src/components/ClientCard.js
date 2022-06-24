@@ -3,65 +3,78 @@ import Carousel from "react-bootstrap/Carousel";
 
 import { imagesSet1 } from "./ClientCardData";
 import { imagesSet2 } from "./ClientCardData";
-// import { Carousel } from "react-responsive-carousel";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "./styles/ClientList.css";
+import btnDot from "./styles/design/btn-dot.svg";
+import "./styles/ClientCard.css";
 
 export default function ClientCard() {
   return (
     <div className="client-cards-out">
-      <div className="client-card-set-one">
-        <Carousel fade={true}>
-          <Carousel.Item interval={2000}>
-            <img
-              className="d-block w-50"
-              src={imagesSet1[0].img}
-              alt="First slide"
-            />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item interval={2000}>
-            <img
-              className="d-block w-50"
-              src={imagesSet1[1].img}
-              alt="Second slide"
-            />
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-      </div>
-      <div className="client-card-set-two">
-        <Carousel fade={true}>
-          <Carousel.Item interval={2000}>
-            <img
-              className="d-block w-50"
-              src={imagesSet2[0].img}
-              alt="First slide"
-            />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item interval={2000}>
-            <img
-              className="d-block w-50"
-              src={imagesSet2[1].img}
-              alt="Second slide"
-            />
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-      </div>
+      <Carousel
+        // controls={false}
+        fade={true}
+        pause={false}
+        className="client-card-set-one"
+      >
+        <Carousel.Item interval={2000}>
+          <img
+            className="img-set-one"
+            src={imagesSet1[0].img}
+            alt="People playing in the water"
+          />
+          <Carousel.Caption className="legends">
+            <p>{imagesSet1[0].brand}</p>
+            <h2>{imagesSet1[0].title}</h2>
+            <div className="read-more">
+              <img src={btnDot} className="btnDot" />
+              <a href="/">Read more</a>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={2000}>
+          <img
+            className="img-set-one"
+            src={imagesSet1[1].img}
+            alt="People speaking about numbers"
+          />
+          <Carousel.Caption className="legends">
+            <p>{imagesSet1[1].brand}</p>
+            <h2>{imagesSet1[1].title}</h2>
+            <div className="read-more">
+              <img src={btnDot} className="btnDot" />
+              <a href="/">Read more</a>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+
+      <Carousel pause={false} fade={true} className="client-card-set-two">
+        <Carousel.Item interval={2000}>
+          <img className="img-set-two" src={imagesSet2[0].img} alt="Lamps" />
+          <Carousel.Caption className="legends">
+            <p>{imagesSet2[0].brand}</p>
+            <h2>{imagesSet2[0].title}</h2>
+            <div className="read-more">
+              <img src={btnDot} className="btnDot" />
+              <a href="/">Read more</a>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={2000}>
+          <img
+            className="img-set-two"
+            src={imagesSet2[1].img}
+            alt="Girl looking to a picture at the wall"
+          />
+          <Carousel.Caption className="legends">
+            <p>{imagesSet2[1].brand}</p>
+            <h2>{imagesSet2[1].title}</h2>
+            <div className="read-more">
+              <img src={btnDot} className="btnDot" />
+              <a href="/">Read more</a>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
     </div>
   );
 }

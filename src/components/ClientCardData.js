@@ -5,26 +5,30 @@ import img7 from "./styles/design/clients-card/image7.png";
 
 export const imagesSet1 = [
   {
-    title: "title",
-    subtitle: "subtitle",
+    title: "A Summer island in the Netherlands",
+
+    brand: "BOL.COM",
     img: img4,
   },
   {
-    title: "title2",
-    subtitle: "subtitle2",
+    title: "Not some average banking website",
+
+    brand: "KEMPEN",
     img: img5,
   },
 ];
 
 export const imagesSet2 = [
   {
-    title: "title3",
-    subtitle: "subtitle3",
+    title: "Beautiful design meets innovative technology",
+
+    brand: "PHILIPS",
     img: img6,
   },
   {
-    title: "title4",
-    subtitle: "subtitle4",
+    title: "A 100 years of Mondriaan & De Stijl",
+
+    brand: "GEMEENTEMUSEUM",
     img: img7,
   },
 ];
