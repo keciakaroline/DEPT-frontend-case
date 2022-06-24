@@ -1,0 +1,57 @@
+.clientQuote-out {
+  /* ClientQuote */
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 92px 64px;
+  gap: 12px;
+
+  position: relative;
+  width: 1440px;
+  height: 284px;
+  background: #121212;
+}
+
+.clientQuote {
+  /* Group 18 */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+
+  position: absolute;
+  width: 1312px;
+  height: 102px;
+  left: 64px;
+  top: 91px;
+}
+
+.clientText {
+  width: 1312px;
+  height: 52px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.clientInfo {
+  width: 1312px;
+  height: 18px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+}
