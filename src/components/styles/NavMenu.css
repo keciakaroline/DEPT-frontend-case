@@ -1,17 +1,13 @@
-.dropdown {
-  /* Frame 10 */
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 11px;
+.dropdown-left.showIcon {
+  background-image: url(./design/Polygon.png) no-repeat;
+}
 
-  position: absolute;
-  width: 1329px;
-  height: 628px;
-  left: calc(50% - 1329px / 2 - 0.5px);
-  top: calc(50% - 628px / 2 + 18.5px);
+.dropdown {
+  /* DesktopMenu */
+  position: relative;
+  width: 1440px;
+  height: 837px;
+  background: #0c0c0c;
 }
 
 .dropdown-left {

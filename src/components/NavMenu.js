@@ -1,150 +1,138 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Navbar from "./Navbar";
 
 import "./styles/NavMenu.css";
 
-export default function NavMenu({ click, setClick }) {
-  const handleClick = () => {
-    setClick(!click);
-  };
-
-  const closeClick = () => {
-    setClick(false);
-  };
-  // className={
-  //   click ? (
-  //     <img src={menuX} alt="menu x when opened"></img>
-  //   ) : (
-  //     <img src={menuDot} alt="menu dots when closed"></img>
-  //   )
-  // }
+export default function NavMenu({ navBarOpen, setNavBarOpen }) {
   return (
     <div className="dropdown">
-      <div className="dropdown-left">
+      <ul className={`dropdown-left ${navBarOpen ? "showIcon" : ""}`}>
         <div className="dropdown-left-land">Landen</div>
-        <a className="dropdown-left-item" activeClassName="active">
+        <li className="dropdown-left-item" activeClassName="active">
           GLOBAL
-        </a>
-        <a className="dropdown-left-item" activeClassName="active">
+        </li>
+        <li className="dropdown-left-item" activeClassName="active">
           NETHERLANDS
-        </a>
-        <a className="dropdown-left-item" activeClassName="active">
+        </li>
+        <li className="dropdown-left-item" activeClassName="active">
           UNITED STATES
-        </a>
-        <a className="dropdown-left-item" activeClassName="active">
+        </li>
+        <li className="dropdown-left-item" activeClassName="active">
           IRELAND
-        </a>
-        <a className="dropdown-left-item" activeClassName="active">
+        </li>
+        <li className="dropdown-left-item" activeClassName="active">
           UNITED KINGDOM
-        </a>
-        <a className="dropdown-left-item" activeClassName="active">
+        </li>
+        <li className="dropdown-left-item" activeClassName="active">
           DEUTSCHLAND
-        </a>
-        <a className="dropdown-left-item" activeClassName="active">
+        </li>
+        <li className="dropdown-left-item" activeClassName="active">
           SCHWEIZ
-        </a>
-      </div>
-      <div className="dropdown-right">
-        <li className="dropdown-right-item">
-          <NavLink
-            exact
-            to="/"
-            className="dropdown-right-link"
-            onClick={click ? handleClick : null}
-            activeClassName="active"
-          >
-            HOME
-          </NavLink>
         </li>
-
-        <li className="dropdown-right-item">
-          <NavLink
-            exact
-            to="/"
-            className="dropdown-right-link"
-            onClick={click ? handleClick : null}
-            activeClassName="active"
-          >
-            WORK
-          </NavLink>
-        </li>
-        <li className="dropdown-right-item">
-          <NavLink
-            exact
-            to="/"
-            className="dropdown-right-link"
-            onClick={click ? handleClick : null}
-            activeClassName="active"
-          >
-            CULTURE
-          </NavLink>
-        </li>
-        <li className="dropdown-right-item">
-          <NavLink
-            exact
-            to="/"
-            className="dropdown-right-link"
-            onClick={click ? handleClick : null}
-            activeClassName="active"
-          >
-            SERVICES
-          </NavLink>
-        </li>
-        <li className="dropdown-right-item">
-          <NavLink
-            exact
-            to="/"
-            className="dropdown-right-link"
-            onClick={click ? handleClick : null}
-            activeClassName="active"
-          >
-            PARTNERS
-          </NavLink>
-        </li>
-        <li className="dropdown-right-item">
-          <NavLink
-            exact
-            to="/"
-            className="dropdown-right-link"
-            onClick={click ? handleClick : null}
-            activeClassName="active"
-          >
-            STORIES
-          </NavLink>
-        </li>
-        <li className="dropdown-right-item">
-          <NavLink
-            exact
-            to="/"
-            className="dropdown-right-link"
-            onClick={click ? handleClick : null}
-            activeClassName="active"
-          >
-            CAREERS
-          </NavLink>
-        </li>
-        <li className="dropdown-right-item">
-          <NavLink
-            exact
-            to="/"
-            className="dropdown-right-link"
-            onClick={click ? handleClick : null}
-            activeClassName="active"
-          >
-            EVENTS
-          </NavLink>
-        </li>
-        <li className="dropdown-right-item">
-          <NavLink
-            exact
-            to="/"
-            className="dropdown-right-link"
-            onClick={click ? handleClick : null}
-            activeClassName="active"
-          >
-            CONTACT
-          </NavLink>
-        </li>
+      </ul>
+      <div className="dropdown-right-out">
+        <ul className={`dropdown-right ${navBarOpen ? "showIcon" : ""}`}>
+          <li className="dropdown-right-item">
+            <NavLink
+              exact
+              to="/"
+              className="dropdown-right-link"
+              // onClick={() => closeMenu()}
+              activeClassName="active"
+            >
+              HOME
+            </NavLink>
+          </li>
+          <li className="dropdown-right-item">
+            <NavLink
+              exact
+              to="/"
+              className="dropdown-right-link"
+              // onClick={() => closeMenu()}
+              activeClassName="active"
+            >
+              WORK
+            </NavLink>
+          </li>
+          <li className="dropdown-right-item">
+            <NavLink
+              exact
+              to="/"
+              className="dropdown-right-link"
+              // onClick={() => closeMenu()}
+              activeClassName="active"
+            >
+              CULTURE
+            </NavLink>
+          </li>
+          <li className="dropdown-right-item">
+            <NavLink
+              exact
+              to="/"
+              className="dropdown-right-link"
+              // onClick={() => closeMenu()}
+              activeClassName="active"
+            >
+              SERVICES
+            </NavLink>
+          </li>
+          <li className="dropdown-right-item">
+            <NavLink
+              exact
+              to="/"
+              className="dropdown-right-link"
+              // onClick={() => closeMenu()}
+              activeClassName="active"
+            >
+              PARTNERS
+            </NavLink>
+          </li>
+          <li className="dropdown-right-item">
+            <NavLink
+              exact
+              to="/"
+              className="dropdown-right-link"
+              // onClick={() => closeMenu()}
+              activeClassName="active"
+            >
+              STORIES
+            </NavLink>
+          </li>
+          <li className="dropdown-right-item">
+            <NavLink
+              exact
+              to="/"
+              className="dropdown-right-link"
+              // onClick={() => closeMenu()}
+              activeClassName="active"
+            >
+              CAREERS
+            </NavLink>
+          </li>
+          <li className="dropdown-right-item">
+            <NavLink
+              exact
+              to="/"
+              className="dropdown-right-link"
+              // onClick={() => closeMenu()}
+              activeClassName="active"
+            >
+              EVENTS
+            </NavLink>
+          </li>
+          <li className="dropdown-right-item">
+            <NavLink
+              exact
+              to="/"
+              className="dropdown-right-link"
+              // onClick={() => closeMenu()}
+              activeClassName="active"
+            >
+              CONTACT
+            </NavLink>
+          </li>
+        </ul>
       </div>
     </div>
   );

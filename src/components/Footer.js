@@ -2,19 +2,21 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./styles/Footer.css";
 import DeptLogo from "./styles/design/DEPT-LOGO-White.svg";
+import ArrowUp from "./styles/design/arrow-up.svg";
 
 export default function Footer() {
   return (
-    <div className="Footer">
-      <div className="Footer-content">
-        <img src={DeptLogo} alt="DEPT logo white" className="footer-logo"></img>
-
+    <div className="footer">
+      <div className="footer-content">
+        <span className="footer-logo">
+          <img src={DeptLogo} alt="DEPT logo white"></img>
+        </span>
         <ul className="footer-menu">
           <li>
             <NavLink
               exact
               to="/"
-              className="nav-menu-link"
+              className="footer-menu-link"
               activeClassName="active"
             >
               WORK
@@ -24,7 +26,7 @@ export default function Footer() {
             <NavLink
               exact
               to="/"
-              className="nav-menu-link"
+              className="footer-menu-link"
               activeClassName="active"
             >
               SERVICES
@@ -34,7 +36,7 @@ export default function Footer() {
             <NavLink
               exact
               to="/"
-              className="nav-menu-link"
+              className="footer-menu-link"
               activeClassName="active"
             >
               STORIES
@@ -44,7 +46,7 @@ export default function Footer() {
             <NavLink
               exact
               to="/"
-              className="nav-menu-link"
+              className="footer-menu-link"
               activeClassName="active"
             >
               ABOUT
@@ -54,7 +56,7 @@ export default function Footer() {
             <NavLink
               exact
               to="/"
-              className="nav-menu-link"
+              className="footer-menu-link"
               activeClassName="active"
             >
               CAREERS
@@ -64,7 +66,7 @@ export default function Footer() {
             <NavLink
               exact
               to="/"
-              className="nav-menu-link"
+              className="footer-menu-link"
               activeClassName="active"
             >
               CONTACT
@@ -81,6 +83,10 @@ export default function Footer() {
             <div>Terms and conditions</div>
           </div>
           <div className="copyright">2022 Dept Agency</div>
+        </div>
+        <div className="arrow-up">
+          <img src={ArrowUp} alt=""></img>
+          <p>TOP</p>
         </div>
       </div>
     </div>

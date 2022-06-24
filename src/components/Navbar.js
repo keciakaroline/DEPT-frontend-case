@@ -25,7 +25,17 @@ export default function Navbar() {
           <img src={DeptLogo} alt="DEPT logo white"></img>
         </span>
         <div className="nav-menu-out">
-          <ul className={`nav-menu ${navBarOpen ? "showMenu" : ""}`}>
+          <ul
+            className={`nav-menu ${
+              navBarOpen
+                ? "showMenu"
+                : // <NavMenu
+                  //   navBarOpen={navBarOpen}
+                  //   setNavBarOpen={setNavBarOpen}
+                  // />
+                  ""
+            }`}
+          >
             <li>
               <NavLink
                 exact
@@ -102,6 +112,7 @@ export default function Navbar() {
               </button>
             </li>
           </ul>
+          {/* <NavMenu navBarOpen={navBarOpen} setNavBarOpen={setNavBarOpen} /> */}
         </div>
       </nav>
     </>

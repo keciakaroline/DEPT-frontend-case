@@ -35,6 +35,9 @@
 
 /* .nav-menu.showMenu {
   width: 100%;
+  nav-link{
+    display:none
+  }
 } */
 
 .nav-menu {
@@ -47,10 +50,11 @@
 
   width: 689px;
   height: 18px;
+  list-style-type: none;
 }
 
 .nav-link {
-  font-family: "Maison Neue";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
