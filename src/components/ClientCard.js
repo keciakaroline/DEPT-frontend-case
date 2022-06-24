@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 
 import { imagesSet1 } from "./ClientCardData";
@@ -25,7 +25,11 @@ export default function ClientCard() {
             <p>{imagesSet1[0].brand}</p>
             <h2>{imagesSet1[0].title}</h2>
             <div className="read-more">
-              <img src={btnDot} className="btnDot" />
+              <img
+                src={btnDot}
+                className="btnDot"
+                alt="dot symbol in front of 'read more'"
+              />
               <a href="/">Read more</a>
             </div>
           </Carousel.Caption>
@@ -40,7 +44,11 @@ export default function ClientCard() {
             <p>{imagesSet1[1].brand}</p>
             <h2>{imagesSet1[1].title}</h2>
             <div className="read-more">
-              <img src={btnDot} className="btnDot" />
+              <img
+                src={btnDot}
+                className="btnDot"
+                alt="dot symbol in front of 'read more'"
+              />
               <a href="/">Read more</a>
             </div>
           </Carousel.Caption>
@@ -54,7 +62,11 @@ export default function ClientCard() {
             <p>{imagesSet2[0].brand}</p>
             <h2>{imagesSet2[0].title}</h2>
             <div className="read-more">
-              <img src={btnDot} className="btnDot" />
+              <img
+                src={btnDot}
+                className="btnDot"
+                alt="dot symbol in front of 'read more'"
+              />
               <a href="/">Read more</a>
             </div>
           </Carousel.Caption>
@@ -69,7 +81,11 @@ export default function ClientCard() {
             <p>{imagesSet2[1].brand}</p>
             <h2>{imagesSet2[1].title}</h2>
             <div className="read-more">
-              <img src={btnDot} className="btnDot" />
+              <img
+                src={btnDot}
+                className="btnDot"
+                alt="dot symbol in front of 'read more'"
+              />
               <a href="/">Read more</a>
             </div>
           </Carousel.Caption>

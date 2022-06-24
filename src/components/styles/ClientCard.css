@@ -5,7 +5,6 @@
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-
   position: relative;
   width: 1440px;
   height: 568px;
@@ -43,8 +42,6 @@
   font-size: 48px;
   line-height: 48px;
   text-align: start;
-
-  /* FWhite */
   color: #ffffff;
 }
 
@@ -58,7 +55,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  /* identical to box height */
+
   color: #ffffff;
   text-align: start;
 }
@@ -69,28 +66,23 @@ div.read-more {
   align-items: center;
   padding: 0px;
   gap: 12px;
-
   width: 104px;
   height: 16px;
-  /* color: #ffffff; */
 }
 
 .read-more a {
   width: 80px;
   height: 16px;
 
-  /* XXS(Body) */
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  /* identical to box height */
   color: #ffffff;
 }
 
 .read-more .btnDot {
-  /* margin-right: 6px; */
   width: 12px;
   height: 12px;
 }
