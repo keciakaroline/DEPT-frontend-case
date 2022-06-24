@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import ScrollToTop from "./ScrollToTop";
 import Navbar from "./components/Navbar";
