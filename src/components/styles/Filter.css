@@ -1,0 +1,69 @@
+.Filter {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 64px;
+
+  width: 1440px;
+  height: 90px;
+}
+
+.filter-show-me {
+  width: 209px;
+  height: 26px;
+}
+
+.filter-show-me p {
+  /* position: absolute; */
+  width: 209px;
+  height: 26px;
+  left: 32px;
+  top: 32px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 26px;
+  color: #a3a3a3;
+}
+
+.filter-show-me .all-work {
+  text-decoration: underline;
+  color: black;
+}
+
+.filter-groups {
+  width: 1103px;
+  height: 26px;
+}
+
+.filter-groups div {
+  /* position: absolute; */
+  width: 1103px;
+  height: 26px;
+  left: 305px;
+  top: 32px;
+}
+
+.filter-groups p {
+  /* position: absolute; */
+  width: 1103px;
+  height: 26px;
+  left: 305px;
+  top: 32px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 26px;
+  text-align: right;
+  color: #a3a3a3;
+}
+
+.filter-groups .groups {
+  text-decoration: underline;
+  color: black;
+}

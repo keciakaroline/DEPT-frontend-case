@@ -7,7 +7,7 @@ import FormContact from "./FormContact";
 import ClientCard2 from "./ClientCard2";
 import ClientCard3 from "./ClientCard3";
 import Hero from "./Hero";
-import Navbar from "./Navbar";
+import Filter from "./Filter";
 import ScaledCardLeft from "./ScaledCardLeft";
 import ScaledCardRight from "./ScaledCardRight";
 
@@ -17,6 +17,7 @@ export default function Homepage() {
   return (
     <div className="homepage">
       <Hero />
+      <Filter />
       <ClientCard />
       <ScaledCardLeft />
       <ClientCard2 />
