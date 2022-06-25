@@ -8,6 +8,7 @@ import ClientCard2 from "./ClientCard2";
 import ClientCard3 from "./ClientCard3";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
+import ScaledCardLeft from "./ScaledCardLeft";
 
 import "./styles/Homepage.css";
 
@@ -16,6 +17,7 @@ export default function Homepage() {
     <div className="homepage">
       <Hero />
       <ClientCard />
+      <ScaledCardLeft />
       <ClientCard2 />
       <ClientQuote />
       <ClientCard3 />
