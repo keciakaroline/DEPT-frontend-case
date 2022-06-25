@@ -5,7 +5,7 @@
   padding: 32px;
   gap: 64px;
 
-  width: 1440px;
+  width: 1440;
   height: 90px;
 }
 
@@ -66,4 +66,61 @@
 .filter-groups .groups {
   text-decoration: underline;
   color: black;
+}
+
+@media screen and (max-width: 410px) {
+  .Filter {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 32px 16px;
+
+    width: 410px;
+    height: 82px;
+    background-color: black;
+  }
+
+  .filter-show-me {
+    width: 265px;
+    height: 18px;
+  }
+
+  .filter-show-me p {
+    position: relative;
+    width: 265px;
+    height: 18px;
+    left: 80px;
+    top: 0px;
+
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+  }
+
+  .filter-show-me .all-work {
+    color: white;
+    text-decoration: none;
+  }
+
+  .filter-groups,
+  .filter-groups div {
+    width: 113px;
+    height: 18px;
+  }
+
+  .filter-groups p {
+    position: relative;
+    width: 113px;
+    height: 18px;
+    left: -320px;
+    top: 0px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .filter-groups .groups {
+    text-decoration: none;
+    color: white;
+  }
 }

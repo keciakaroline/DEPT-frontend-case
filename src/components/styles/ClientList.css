@@ -1,6 +1,4 @@
 .client-list {
-  /* ClientList */
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,20 +7,17 @@
   gap: 64px;
 
   position: relative;
-  width: 1440px;
+  width: 1440;
   height: 977px;
   background: #121212;
 }
 
 .clients-intro-out {
-  /* Group 18 */
   width: 1354px;
   height: 120px;
 }
 
 .clients-intro {
-  /* Frame 19 */
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -37,17 +32,15 @@
 }
 
 .clients-intro h1 {
-  /* Clients */
   width: 1312px;
   height: 34px;
 
-  /* M(Sh) */
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
   line-height: 34px;
-  /* identical to box height */
+
   color: #ffffff;
 }
 
@@ -55,7 +48,6 @@
   width: 1354px;
   height: 54px;
 
-  /* XS(Body) */
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;

@@ -9,6 +9,7 @@ export default function Filter() {
           Show me <span className="all-work">all work</span>
         </p>
       </div>
+
       <div className="filter-groups">
         <div>
           <p>

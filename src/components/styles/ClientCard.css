@@ -1,11 +1,13 @@
 .client-cards-out {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: 0px;
   position: relative;
-  width: 1440px;
+  width: 1440;
   height: 568px;
+  background-color: black;
 }
 
 .client-card-set-one,
@@ -86,4 +88,90 @@ div.read-more {
 .read-more .btnDot {
   width: 12px;
   height: 12px;
+}
+
+@media screen and (max-width: 410px) {
+  .client-cards-out {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 16px;
+
+    width: 410px;
+    height: 484.5px;
+  }
+
+  .client-card-set-one,
+  .client-card-set-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    /* padding: 32px; */
+    gap: 16px;
+
+    width: 720px;
+    height: 568px;
+  }
+
+  .img-set-one,
+  .img-set-two {
+    width: 720px;
+    height: 568px;
+  }
+
+  .client-card-set-one .legends h2,
+  .client-card-set-two .legends h2 {
+    width: 656px;
+    height: 96px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: start;
+    color: #ffffff;
+  }
+
+  .client-card-set-one .legends p,
+  .client-card-set-two .legends p {
+    width: 362px;
+    height: 16px;
+  }
+
+  div.read-more {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    width: 104px;
+    height: 16px;
+  }
+
+  .read-more a {
+    width: 80px;
+    height: 16px;
+    text-decoration: none;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+
+  .read-more a:hover {
+    text-decoration: underline;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .read-more .btnDot {
+    width: 12px;
+    height: 12px;
+  }
 }

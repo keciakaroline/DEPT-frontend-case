@@ -1,6 +1,6 @@
 .hero-out {
   position: relative;
-  width: 1440px;
+  width: 1440;
   height: 628px;
 }
 
@@ -11,7 +11,7 @@
   right: 0%;
   top: 0%;
   bottom: 0%;
-  width: 100%;
+  width: 1440;
   background: linear-gradient(
       358.53deg,
       rgba(0, 0, 0, 0.33) 1.79%,
@@ -43,9 +43,6 @@
   animation-duration: 4s;
 }
 
-.hero-title strong {
-  text-decoration: underline;
-}
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -74,4 +71,43 @@
   font-size: 16px;
   line-height: 16px;
   color: #ffffff;
+}
+
+/* @media screen and (min-width: 1441px) {
+  .hero-out {
+    width: auto;
+    height: auto;
+  }
+} */
+
+@media screen and (max-width: 410px) {
+  .hero-out {
+    width: 410px;
+    height: 415px;
+  }
+
+  .hero-img {
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+
+  .hero-title {
+    position: absolute;
+    width: 378px;
+    left: calc(50% - 378px / 2);
+    top: 59.52%;
+    bottom: 5.3%;
+    line-height: 37px;
+
+    text-align: justify;
+    padding-right: 30px;
+  }
+
+  .hero-brand {
+    position: absolute;
+    width: 46px;
+    left: calc(50% - 46px / 2 - 166px);
+    top: 47.95%;
+    bottom: 48.19%;
+  }
 }

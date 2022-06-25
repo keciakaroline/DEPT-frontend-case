@@ -18,6 +18,10 @@ export default function Navbar() {
     setNavBarOpen(false);
   };
 
+  const showMenu = () => {
+    <NavMenu />;
+  };
+
   return (
     <>
       <nav className="navbar">
@@ -102,16 +106,16 @@ export default function Navbar() {
                 CONTACT
               </NavLink>
             </li>
-            <li>
-              <button onClick={handleClick} className="btn-menu">
-                {navBarOpen ? (
-                  <img src={menuX} alt=""></img>
-                ) : (
-                  <img src={menuDot} alt=""></img>
-                )}
-              </button>
-            </li>
           </ul>
+
+          <button onClick={handleClick} className="btn-menu">
+            {navBarOpen ? (
+              <img src={menuX} alt=""></img>
+            ) : (
+              <img src={menuDot} alt=""></img>
+            )}
+          </button>
+
           {/* <NavMenu navBarOpen={navBarOpen} setNavBarOpen={setNavBarOpen} /> */}
         </div>
       </nav>
