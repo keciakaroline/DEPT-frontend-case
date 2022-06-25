@@ -65,6 +65,7 @@ div.read-more {
 .read-more a {
   width: 80px;
   height: 16px;
+  text-decoration: none;
 
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -72,6 +73,12 @@ div.read-more {
   font-size: 16px;
   line-height: 16px;
   color: #ffffff;
+}
+
+.read-more a:hover {
+  text-decoration: underline;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .read-more .btnDot {
