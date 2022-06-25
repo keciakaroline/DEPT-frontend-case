@@ -12,15 +12,14 @@
   top: 0%;
   bottom: 0%;
   width: 100%;
-  /* background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: left top;
   background: linear-gradient(
       358.53deg,
       rgba(0, 0, 0, 0.33) 1.79%,
       rgba(0, 0, 0, 0) 99.33%
     ),
-    url(./design/clients-card/image0.png); */
+    url(./design/clients-card/image0.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -44,12 +43,6 @@
   animation-duration: 4s;
 }
 
-/* .hero-title .target-2 {
-  display: block;
-  animation-name: moveInRight;
-  animation-duration: 3s;
-} */
-
 .hero-title strong {
   text-decoration: underline;
 }
@@ -67,22 +60,6 @@
     transform: translate(0);
   }
 }
-/* 
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-
-  80% {
-    transform: translateX(-10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-} */
 
 .hero-brand {
   position: absolute;
