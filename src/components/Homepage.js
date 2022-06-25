@@ -9,6 +9,7 @@ import ClientCard3 from "./ClientCard3";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import ScaledCardLeft from "./ScaledCardLeft";
+import ScaledCardRight from "./ScaledCardRight";
 
 import "./styles/Homepage.css";
 
@@ -19,6 +20,7 @@ export default function Homepage() {
       <ClientCard />
       <ScaledCardLeft />
       <ClientCard2 />
+      <ScaledCardRight />
       <ClientQuote />
       <ClientCard3 />
       <ClientList />

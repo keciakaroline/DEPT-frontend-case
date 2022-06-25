@@ -5,6 +5,13 @@ import DeptLogo from "./styles/design/DEPT-LOGO-White.svg";
 import ArrowUp from "./styles/design/arrow-up.svg";
 
 export default function Footer() {
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="footer">
       <div className="footer-content">
@@ -65,7 +72,7 @@ export default function Footer() {
           <li>
             <NavLink
               exact
-              to="/"
+              to="/contact"
               className="footer-menu-link"
               activeClassName="active"
             >
@@ -85,7 +92,7 @@ export default function Footer() {
           <div className="copyright">2022 Dept Agency</div>
         </div>
         <div className="arrow-up">
-          <img src={ArrowUp} alt=""></img>
+          <img src={ArrowUp} alt="" onClick={goToTop}></img>
           <p>TOP</p>
         </div>
       </div>

@@ -12,7 +12,6 @@
 }
 
 .arrow-up p {
-  /* TOP */
   position: absolute;
   width: 34px;
   height: 18px;
@@ -33,6 +32,7 @@
   height: 36px;
   left: 1375px;
   top: 120px;
+  cursor: pointer;
 }
 
 .footer-logo {
@@ -45,7 +45,6 @@
 }
 
 .footer-menu {
-  /* Frame 14 */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -76,7 +75,7 @@
   border-radius: 3px;
 }
 
-.footer-menu-link:active {
+.footer-menu-link .active {
   border-bottom: 2px solid white;
   font-weight: 500;
 }
@@ -89,7 +88,6 @@
 }
 
 .footer-infos {
-  /* Frame 14 */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
