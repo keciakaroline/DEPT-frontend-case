@@ -94,7 +94,7 @@ export default function Navbar() {
             <li>
               <NavLink
                 exact
-                to="/"
+                to="/contact"
                 className="nav-link"
                 onClick={() => closeMenu()}
                 activeClassName="active"
