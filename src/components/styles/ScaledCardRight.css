@@ -1,4 +1,4 @@
-.cardLeft-out {
+.cardRight-out {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -9,7 +9,7 @@
   height: 568px;
 }
 
-.cardLeft {
+.cardRight {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -24,11 +24,11 @@
       rgba(0, 0, 0, 0.33) 1.79%,
       rgba(0, 0, 0, 0) 99.33%
     ),
-    url(./design/clients-card/image3.png);
+    url(./design/clients-card/image2.png);
   background-size: cover;
 }
 
-.cardLeft-brand {
+.cardRight-brand {
   width: 900px;
   height: 16px;
 
@@ -40,7 +40,7 @@
   color: #ffffff;
 }
 
-.cardLeft-title {
+.cardRight-title {
   width: 900px;
   height: 48px;
 
@@ -87,7 +87,7 @@ div.read-more {
   font-style: italic;
 }
 
-.cardLeft-info-out {
+.cardRight-info-out {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,7 +99,7 @@ div.read-more {
   background: #121212;
 }
 
-.cardLeft-info {
+.cardRight-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,9 +111,9 @@ div.read-more {
   height: 438px;
 }
 
-.cardLeft-info-one,
-.cardLeft-info-two,
-.cardLeft-info-three {
+.cardRight-info-one,
+.cardRight-info-two,
+.cardRight-info-three {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -124,21 +124,21 @@ div.read-more {
   height: 142px;
 }
 
-.cardLeft-info-two,
-.cardLeft-info-three {
+.cardRight-info-two,
+.cardRight-info-three {
   padding: 16px 0px 0px;
 }
 
-.cardLeft-info-one,
-.cardLeft-info-two {
+.cardRight-info-one,
+.cardRight-info-two {
   padding-bottom: 150px;
   border: none;
   border-bottom: 1px solid #dddddd;
 }
 
-.cardLeft-info-one .info-one,
-.cardLeft-info-two .info-two,
-.cardLeft-info-three .info-three {
+.cardRight-info-one .info-one,
+.cardRight-info-two .info-two,
+.cardRight-info-three .info-three {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -149,9 +149,9 @@ div.read-more {
   height: 106px;
 }
 
-.cardLeft-info-one-brand,
-.cardLeft-info-two-brand,
-.cardLeft-info-three-brand {
+.cardRight-info-one-brand,
+.cardRight-info-two-brand,
+.cardRight-info-three-brand {
   width: 90px;
   height: 18px;
 
@@ -163,9 +163,9 @@ div.read-more {
   color: #ffffff;
 }
 
-.cardLeft-info-one-title,
-.cardLeft-info-two-title,
-.cardLeft-info-three-title {
+.cardRight-info-one-title,
+.cardRight-info-two-title,
+.cardRight-info-three-title {
   width: 412px;
   height: 48px;
 
