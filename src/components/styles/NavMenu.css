@@ -5,7 +5,7 @@
 .dropdown {
   /* DesktopMenu */
   position: relative;
-  width: 1440px;
+  width: 100%;
   height: 837px;
   background: #0c0c0c;
 }

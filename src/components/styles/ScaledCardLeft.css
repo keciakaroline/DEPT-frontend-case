@@ -5,7 +5,7 @@
   padding: 0px;
 
   position: relative;
-  width: 1440px;
+  width: 100%;
   height: 568px;
 }
 
@@ -17,7 +17,7 @@
   padding: 32px;
   gap: 16px;
 
-  width: 964px;
+  width: 100%;
   height: 568px;
   background: linear-gradient(
       358.53deg,
@@ -25,6 +25,8 @@
       rgba(0, 0, 0, 0) 99.33%
     ),
     url(./design/clients-card/image3.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
   background-size: cover;
 }
 
