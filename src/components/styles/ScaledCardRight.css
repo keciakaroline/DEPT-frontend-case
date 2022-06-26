@@ -1,3 +1,7 @@
+.for-mobile {
+  display: none;
+}
+
 .cardRight-out {
   display: flex;
   flex-direction: row;
@@ -118,7 +122,7 @@ div.read-more {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 36px;
+  gap: 15px;
 
   width: 412px;
   height: 142px;
@@ -175,4 +179,117 @@ div.read-more {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 410px) {
+  .cardRight-out {
+    display: none;
+  }
+  .for-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    width: 410px;
+    height: 740.5px;
+  }
+
+  .for-mobile .cardRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 24px 24px 0px 24px;
+
+    gap: 16px;
+    width: 410px;
+    height: 484.5px;
+  }
+
+  .for-mobile .cardRight-brand {
+    width: 362px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .for-mobile .cardRight-title {
+    width: 362px;
+    height: 52px;
+
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .for-mobile .cardRight-info-out {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 24px 0px 24px;
+    gap: 16px;
+    width: 410px;
+    height: 256px;
+  }
+
+  .for-mobile .cardRight-info {
+    padding: 0px;
+  }
+
+  .for-mobile .cardRight-info-one,
+  .for-mobile .cardRight-info-two {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 0px;
+
+    width: 362px;
+    height: 114px;
+  }
+
+  .for-mobile .cardRight-info-three {
+    display: none;
+  }
+
+  .for-mobile .cardRight-info-two {
+    padding: 16px 0px 0px;
+  }
+
+  .for-mobile .cardRight-info-one,
+  .for-mobile .cardRight-info-two {
+    padding-bottom: 50px;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .for-mobile .cardRight-info-one-brand,
+  .for-mobile .cardRight-info-two-brand {
+    width: 90px;
+    height: 18px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .for-mobile .cardRight-info-one-title,
+  .for-mobile .cardRight-info-two-title {
+    width: 362px;
+    height: 48px;
+
+    font-size: 16px;
+  }
+
+  div.read-more {
+    display: none;
+  }
+
+  .read-more a {
+    display: none;
+  }
+
+  .read-more .btnDot {
+    display: none;
+  }
 }

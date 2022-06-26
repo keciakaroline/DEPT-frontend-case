@@ -120,7 +120,7 @@ div.read-more {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 36px;
+  gap: 15px;
 
   width: 412px;
   height: 142px;
@@ -183,10 +183,8 @@ div.read-more {
   .cardLeft-out {
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-end; */
+    justify-content: flex-end;
     align-items: flex-start;
-    /* padding: 24px; */
-    /* gap: 16px; */
 
     width: 410px;
     height: 740.5px;
@@ -197,9 +195,9 @@ div.read-more {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    padding: 24px;
-    /* gap: 16px; */
+    padding: 24px 24px 0px 24px;
 
+    gap: 16px;
     width: 410px;
     height: 484.5px;
   }
@@ -209,7 +207,6 @@ div.read-more {
     height: 16px;
     font-size: 16px;
     line-height: 16px;
-    margin-bottom: 0px;
   }
 
   .cardLeft-title {
@@ -220,17 +217,19 @@ div.read-more {
     line-height: 26px;
   }
 
-  .cardLeft-info-out,
-  .cardLeft-info {
+  .cardLeft-info-out {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 24px;
+    padding: 24px 24px 0px 24px;
     gap: 16px;
-
     width: 410px;
     height: 256px;
+  }
+
+  .cardLeft-info {
+    padding: 0px;
   }
 
   .cardLeft-info-one,
@@ -239,11 +238,10 @@ div.read-more {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    gap: 36px;
+    gap: 0px;
 
     width: 362px;
     height: 114px;
-    /* align-self: stretch; */
   }
 
   .cardLeft-info-three {
@@ -261,19 +259,6 @@ div.read-more {
     border-bottom: 1px solid #dddddd;
   }
 
-  .cardLeft-info-one .info-one,
-  .cardLeft-info-two .info-two {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 12px;
-
-    width: 362px;
-    height: 78px;
-    /* align-self: stretch; */
-  }
-
   .cardLeft-info-one-brand,
   .cardLeft-info-two-brand {
     width: 90px;
@@ -289,7 +274,6 @@ div.read-more {
     height: 48px;
 
     font-size: 16px;
-    line-height: 16px;
   }
 
   div.read-more {

@@ -54,3 +54,43 @@
   text-align: center;
   color: #ffffff;
 }
+
+@media screen and (max-width: 410px) {
+  .clientQuote-out {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 92px 32px;
+    gap: 12px;
+
+    width: 410px;
+    height: 416px;
+  }
+
+  .clientQuote {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+
+    position: absolute;
+    width: 346px;
+    height: 232px;
+    left: 32px;
+    top: 92px;
+  }
+
+  .clientText {
+    width: 346px;
+    height: 182px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .clientInfo {
+    width: 346px;
+    height: 18px;
+  }
+}
