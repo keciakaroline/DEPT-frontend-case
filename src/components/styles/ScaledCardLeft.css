@@ -178,3 +178,129 @@ div.read-more {
   line-height: 20px;
   color: #ffffff;
 }
+
+@media screen and (max-width: 410px) {
+  .cardLeft-out {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: flex-start;
+    /* padding: 24px; */
+    /* gap: 16px; */
+
+    width: 410px;
+    height: 740.5px;
+  }
+
+  .cardLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 24px;
+    /* gap: 16px; */
+
+    width: 410px;
+    height: 484.5px;
+  }
+
+  .cardLeft-brand {
+    width: 362px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 0px;
+  }
+
+  .cardLeft-title {
+    width: 362px;
+    height: 52px;
+
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .cardLeft-info-out,
+  .cardLeft-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 16px;
+
+    width: 410px;
+    height: 256px;
+  }
+
+  .cardLeft-info-one,
+  .cardLeft-info-two {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 36px;
+
+    width: 362px;
+    height: 114px;
+    /* align-self: stretch; */
+  }
+
+  .cardLeft-info-three {
+    display: none;
+  }
+
+  .cardLeft-info-two {
+    padding: 16px 0px 0px;
+  }
+
+  .cardLeft-info-one,
+  .cardLeft-info-two {
+    padding-bottom: 50px;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .cardLeft-info-one .info-one,
+  .cardLeft-info-two .info-two {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+
+    width: 362px;
+    height: 78px;
+    /* align-self: stretch; */
+  }
+
+  .cardLeft-info-one-brand,
+  .cardLeft-info-two-brand {
+    width: 90px;
+    height: 18px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .cardLeft-info-one-title,
+  .cardLeft-info-two-title {
+    width: 362px;
+    height: 48px;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  div.read-more {
+    display: none;
+  }
+
+  .read-more a {
+    display: none;
+  }
+
+  .read-more .btnDot {
+    display: none;
+  }
+}
