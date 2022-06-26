@@ -19,10 +19,6 @@ export default function Navbar() {
     setNavBarOpen(false);
   };
 
-  const showMenu = () => {
-    <NavMenu />;
-  };
-
   return (
     <div className={`navbar-wrapper ${navBarOpen ? "expanded" : ""}`}>
       <nav className="navbar">
@@ -30,7 +26,11 @@ export default function Navbar() {
           <img src={DeptLogo} alt="DEPT logo white"></img>
         </span>
         <div className="nav-menu-out">
-         <HorizontalMenu handleClick={handleClick} navBarOpen={navBarOpen} closeMenu={closeMenu} />
+          <HorizontalMenu
+            handleClick={handleClick}
+            navBarOpen={navBarOpen}
+            closeMenu={closeMenu}
+          />
         </div>
       </nav>
       <NavMenu navBarOpen={navBarOpen} setNavBarOpen={setNavBarOpen} />
@@ -40,17 +40,7 @@ export default function Navbar() {
           <img src={deptLogoBlack} alt="DEPT logo black"></img>
         </span>
         <div className="nav-menu-out">
-          <ul
-            className={`nav-menu ${
-              navBarOpen
-                ? "showMenu"
-                : // <NavMenu
-                  //   navBarOpen={navBarOpen}
-                  //   setNavBarOpen={setNavBarOpen}
-                  // />
-                  ""
-            }`}
-          >
+          <ul className={`nav-menu ${navBarOpen ? "showMenu" : ""}`}>
             MENU
             <li>
               <NavLink
@@ -128,7 +118,6 @@ export default function Navbar() {
               </button>
             </li>
           </ul>
-          {/* <NavMenu navBarOpen={navBarOpen} setNavBarOpen={setNavBarOpen} /> */}
         </div>
       </nav>
     </div>
