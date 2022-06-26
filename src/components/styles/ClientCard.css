@@ -36,7 +36,8 @@
 
 .client-card-set-one .legends .title,
 .client-card-set-two .legends .title {
-  width: 656px;
+  /* width: 656px; */
+  width: 530px;
   height: 96px;
   font-family: "Roboto", sans-serif;
   font-style: normal;

@@ -10,7 +10,7 @@ export default function ClientCard({ firstImageSet, secondImageSet }) {
       <Carousel fade={false} pause={false} className="client-card-set-one">
         <Carousel.Item interval={2000}>
           <img
-            className="img-set-one"
+            className="img-set-one "
             src={firstImageSet[0].img}
             alt={firstImageSet[0].alt}
           />
