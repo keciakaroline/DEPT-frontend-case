@@ -1,15 +1,19 @@
+.navbar-for-mobile {
+  display: none;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 16px;
-  gap: 426px;
-
+  padding: 16px 400px 16px 50px;
+  gap: 0px;
   position: relative;
   width: 100%;
   height: 115px;
   background: #121212;
+  align-content: center;
 }
 
 .nav-logo {
@@ -23,14 +27,14 @@
   align-items: center;
   padding: 0px;
   gap: 96px;
-
-  width: 815.4px;
+  width: auto;
   height: 18px;
+  justify-content: flex-end;
 }
 
-.nav-menu.showMenu {
+/* .nav-menu.showMenu {
   display: none;
-}
+} */
 
 .nav-menu {
   display: flex;
@@ -39,11 +43,8 @@
   padding: 0px;
   gap: 48px;
 
-  position: absolute;
   width: 689px;
   height: 18px;
-  left: 450.59px;
-  top: 46px;
   list-style-type: none;
 }
 
@@ -73,12 +74,97 @@
   font-weight: 500;
 }
 
-.nav-menu-out .btn-menu {
+.nav-menu-out button.btn-menu {
   width: 30.4px;
   height: 8px;
-  position: absolute;
-  top: 45px;
-  right: 45px;
   cursor: pointer;
   background: transparent;
+}
+
+@media screen and (max-width: 410px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar-for-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    gap: 0px;
+    position: relative;
+
+    align-content: center;
+    position: relative;
+    width: 410px;
+    height: 56px;
+
+    background: #ffffff;
+  }
+
+  .navbar-for-mobile .nav-logo {
+    position: absolute;
+    left: 3.9%;
+    right: 83.21%;
+    top: 30.36%;
+    bottom: 42.86%;
+  }
+
+  .navbar-for-mobile .nav-menu-out {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 96px;
+    width: auto;
+    height: 18px;
+    justify-content: flex-end;
+  }
+
+  /* .nav-menu.showMenu {
+  display: none;
+} */
+
+  .navbar-for-mobile .nav-menu {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    list-style-type: none;
+  }
+
+  .navbar-for-mobile .nav-link {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+
+    transition: background-color 0.7s linear;
+    border-radius: 3px;
+    border: none;
+  }
+
+  .navbar-for-mobile .nav-link .active {
+    text-decoration: underline;
+    font-weight: 500;
+    color: white;
+  }
+
+  .navbar-for-mobile .nav-menu .nav-link:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  .navbar-for-mobile .nav-menu-out button.btn-menu {
+    width: 30.4px;
+    height: 8px;
+    cursor: pointer;
+    background: transparent;
+  }
 }

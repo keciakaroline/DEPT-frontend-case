@@ -29,6 +29,9 @@
       rgba(0, 0, 0, 0) 99.33%
     ),
     url(./design/clients-card/image2.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
   background-size: cover;
 }
 
