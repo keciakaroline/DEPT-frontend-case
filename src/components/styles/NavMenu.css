@@ -93,24 +93,23 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    padding-left: 20px;
-
+    padding-left: 222px;
     color: #0e0e0e;
+    padding-top: 10px;
   }
 
   .big-menu-wrapper-for-mobile {
     position: relative;
-    display: flex;
-    flex-direction: row;
-
+    width: 410px;
+    height: 800px;
     background-color: #0e0e0e;
   }
 
   .dropdown-right-for-mobile {
     text-align: right;
-    width: 100%;
-    padding: 30px;
-    /* background-color: #0e0e0e; */
+    width: 410px;
+    padding: 5px;
+    padding-top: 60px;
   }
 
   .dropdown-right-link-for-mobile {
@@ -118,7 +117,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 34px;
-    line-height: 34px;
+    line-height: 40px;
     color: #ffffff;
     text-decoration: none;
   }
@@ -134,8 +133,8 @@
 
   .dropdown-right-for-mobile ul li:hover::before {
     content: "";
-    padding-right: 50px;
-    padding-top: 20px;
+    padding-right: 30px;
+    padding-top: 4px;
     background-image: url("./design/Polygon.png");
     background-size: 15px 15px;
     background-repeat: no-repeat;

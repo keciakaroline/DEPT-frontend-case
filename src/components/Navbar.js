@@ -44,7 +44,11 @@ export default function Navbar() {
       >
         <nav className="navbar-for-mobile">
           <span className="nav-logo-mobile">
-            <img src={deptLogoBlack} alt="DEPT logo black"></img>
+            <img
+              // style={{ visibility: navBarOpen ? "hidden" : "inherit" }}
+              src={navBarOpen ? { deptLogoBlack } : { DeptLogo }}
+              alt="DEPT logo"
+            ></img>
           </span>
           <div className="nav-menu-out-for-mobile">
             <HorizontalMenuMobile
