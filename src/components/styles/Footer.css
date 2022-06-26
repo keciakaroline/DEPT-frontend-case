@@ -1,3 +1,7 @@
+.for-mobile-socials {
+  display: none;
+}
+
 .footer {
   position: absolute;
   width: 100%;
@@ -141,4 +145,120 @@ hr {
 
   border: 1px solid #3e3e3e;
   transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+@media screen and (max-width: 410px) {
+  .footer {
+    width: 410px;
+    height: 663px;
+  }
+
+  .footer-content {
+    background: #0e0e0e;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+  }
+
+  .arrow-up p {
+    display: none;
+  }
+
+  .arrow-up img {
+    display: none;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 20px;
+    position: absolute;
+    width: 410px;
+    height: 18px;
+    left: 25px;
+    top: 144px;
+    list-style-type: none;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .footer-menu-link {
+    font-size: 18px;
+  }
+
+  .footer-menu-link .active {
+    border-bottom: 2px solid white;
+    font-weight: 500;
+  }
+
+  .footer-menu-link:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  .footer-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 0;
+    top: 384px;
+    align-content: flex-start;
+    justify-content: flex-end;
+    width: 201px;
+    height: 45px;
+  }
+
+  .footer-infos div {
+    font-family: "Arial";
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .copyright {
+    font-family: "Arial";
+    font-size: 13px;
+    line-height: 15px;
+    width: 120px;
+    height: 15px;
+    top: 447px;
+    left: 15px;
+  }
+
+  hr {
+    position: absolute;
+    left: 36px;
+    top: 48%;
+    width: 338px;
+    height: 0px;
+    bottom: 50%;
+    border: 1px solid #3e3e3e;
+  }
+
+  .for-mobile-socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 350px;
+    height: 200px;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  .for-mobile-socials .facebook,
+  .for-mobile-socials .twitter,
+  .for-mobile-socials .instagram {
+    width: 30px;
+    height: 30px;
+  }
 }

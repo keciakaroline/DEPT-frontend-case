@@ -71,7 +71,7 @@ form .text-name-email .text-name label {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #000000;
+  color: #121212;
 }
 
 form .text-name-email .text-name input,
@@ -176,4 +176,159 @@ button.btn-form {
   color: white;
   text-decoration: underline;
   font-weight: 500;
+}
+
+@media screen and (max-width: 410px) {
+  .contact-out,
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 45px 5px 30px;
+    gap: 38px;
+
+    width: 410px;
+    height: 570px;
+  }
+
+  .contact {
+    width: 332px;
+    height: 570px;
+    justify-content: flex-start;
+    padding: 0px;
+  }
+
+  .contact .contact-hero {
+    width: 338px;
+    height: 52px;
+
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .form {
+    width: 332px;
+    height: 300px;
+    margin-top: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 48px 36px; */
+    align-items: flex-start;
+    gap: 36px;
+  }
+
+  .form .text-name-email {
+    display: flex;
+    flex-direction: column;
+    /* gap: 0; */
+    /* position: absolute; */
+    width: 332px;
+    height: 100px;
+    left: 30px;
+    top: 107px;
+    padding-top: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  /* NAME */
+  .form .text-name-email .text-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 332px;
+    height: 50px;
+  }
+
+  .form .text-name-email .text-name label {
+    width: 45px;
+    height: 18px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .form .text-name-email .text-name input,
+  .form .text-name-email .text-email input,
+  .form .text-message input {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 332px;
+  }
+
+  .form .text-name-email .text-name input:focus,
+  .form .text-name-email .text-email input:focus,
+  .form .text-message input:focus {
+    outline: none;
+  }
+
+  /* EMAIL */
+  .form .text-name-email .text-email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 332px;
+    height: 50px;
+  }
+
+  .form .text-name-email .text-email label {
+    width: 45px;
+    height: 18px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .form .text-message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 80px;
+    width: 332px;
+    height: 120px;
+    left: 30px;
+    top: 318px;
+  }
+
+  .form .text-message label {
+    width: 45px;
+    height: 18px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .error-msg {
+    display: none;
+  }
+
+  button.btn-form {
+    width: 338px;
+    height: 50px;
+    left: 28px;
+    top: 468px;
+    transition: background-color 0.7s linear;
+    background-color: transparent;
+    border: 1px solid #5115f7;
+    color: #5115f7;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 64px;
+  }
+
+  .btn-form:hover {
+    background-color: #5115f7;
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+  }
 }
