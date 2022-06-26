@@ -18,9 +18,6 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Homepage />}></Route>
           <Route exact path="/contact" element={<FormContact />}></Route>
-          {/* <Route exact path="/projects" element={<Homepage />}></Route>
-          <Route exact path="/about" element={<Homepage />}></Route>
-          <Route exact path="/" element={<Homepage />}></Route> */}
         </Routes>
       </ScrollToTop>
     </>

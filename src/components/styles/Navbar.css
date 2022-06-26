@@ -1,4 +1,4 @@
-.navbar-for-mobile {
+.navbar-wrapper-for-mobile {
   display: none;
 }
 
@@ -86,11 +86,11 @@
 }
 
 @media screen and (max-width: 410px) {
-  .navbar {
+  .navbar-wrapper {
     display: none;
   }
 
-  .navbar-for-mobile {
+  .navbar-wrapper-for-mobile {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -107,7 +107,7 @@
     background: #ffffff;
   }
 
-  .navbar-for-mobile .nav-logo {
+  .nav-logo-mobile {
     position: absolute;
     left: 3.9%;
     right: 83.21%;
@@ -115,56 +115,11 @@
     bottom: 42.86%;
   }
 
-  .navbar-for-mobile .nav-menu-out {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 96px;
-    width: auto;
-    height: 18px;
-    justify-content: flex-end;
-  }
-
-  .navbar-for-mobile .nav-menu {
+  .nav-menu-out-for-mobile {
     position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    list-style-type: none;
-  }
-
-  .navbar-for-mobile .nav-link {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
-    color: #ffffff;
-
-    transition: background-color 0.7s linear;
-    border-radius: 3px;
-    border: none;
-  }
-
-  .navbar-for-mobile .nav-link .active {
-    text-decoration: underline;
-    font-weight: 500;
-    color: white;
-  }
-
-  .navbar-for-mobile .nav-menu .nav-link:hover {
-    background-color: white;
-    color: black;
-    text-decoration: underline;
-    font-weight: 500;
-  }
-
-  .navbar-for-mobile .nav-menu-out button.btn-menu {
-    width: 30.4px;
-    height: 8px;
-    cursor: pointer;
-    background: transparent;
+    left: 71.12%;
+    right: 3.9%;
+    top: 32.14%;
+    bottom: 35.71%;
   }
 }

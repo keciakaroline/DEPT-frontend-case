@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import NavMenu, { HorizontalMenu } from "./NavMenu";
+import {
+  HorizontalMenu,
+  HorizontalMenuMobile,
+  NavMenu,
+  NavMenuMobile,
+} from "./NavMenu";
 
 import "./styles/Navbar.css";
 import DeptLogo from "./styles/design/DEPT-LOGO-White.svg";
 import deptLogoBlack from "./styles/design/DEPT-LOGO-Black.svg";
-import menuDot from "./styles/design/menu-dot.svg";
-import menuX from "./styles/design/menu-x.svg";
 
 export default function Navbar() {
   const [navBarOpen, setNavBarOpen] = useState(false);
@@ -20,106 +22,43 @@ export default function Navbar() {
   };
 
   return (
-    <div className={`navbar-wrapper ${navBarOpen ? "expanded" : ""}`}>
-      <nav className="navbar">
-        <span className="nav-logo">
-          <img src={DeptLogo} alt="DEPT logo white"></img>
-        </span>
-        <div className="nav-menu-out">
-          <HorizontalMenu
-            handleClick={handleClick}
-            navBarOpen={navBarOpen}
-            closeMenu={closeMenu}
-          />
-        </div>
-      </nav>
-      <NavMenu navBarOpen={navBarOpen} setNavBarOpen={setNavBarOpen} />
+    <>
+      <div className={`navbar-wrapper ${navBarOpen ? "expanded" : ""}`}>
+        <nav className="navbar">
+          <span className="nav-logo">
+            <img src={DeptLogo} alt="DEPT logo white"></img>
+          </span>
+          <div className="nav-menu-out">
+            <HorizontalMenu
+              handleClick={handleClick}
+              navBarOpen={navBarOpen}
+              closeMenu={closeMenu}
+            />
+          </div>
+        </nav>
+        <NavMenu navBarOpen={navBarOpen} setNavBarOpen={setNavBarOpen} />
+      </div>
 
-      <nav className="navbar-for-mobile">
-        <span className="nav-logo">
-          <img src={deptLogoBlack} alt="DEPT logo black"></img>
-        </span>
-        <div className="nav-menu-out">
-          <ul className={`nav-menu ${navBarOpen ? "showMenu" : ""}`}>
-            MENU
-            <li>
-              <NavLink
-                exact
-                to="/"
-                className="nav-link"
-                onClick={() => closeMenu()}
-                activeClassName="active"
-              >
-                WORK
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                exact
-                to="/"
-                className="nav-link"
-                onClick={() => closeMenu()}
-                activeClassName="active"
-              >
-                CULTURE
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                exact
-                to="/"
-                className="nav-link"
-                onClick={() => closeMenu()}
-                activeClassName="active"
-              >
-                SERVICES
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                exact
-                to="/"
-                className="nav-link"
-                onClick={() => closeMenu()}
-                activeClassName="active"
-              >
-                INSIGHTS
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                exact
-                to="/"
-                className="nav-link"
-                onClick={() => closeMenu()}
-                activeClassName="active"
-              >
-                CAREERS
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                exact
-                to="/contact"
-                className="nav-link"
-                onClick={() => closeMenu()}
-                activeClassName="active"
-              >
-                CONTACT
-              </NavLink>
-            </li>
-            <li>
-              <button onClick={handleClick} className="btn-menu">
-                {navBarOpen ? (
-                  <h2> MENU</h2>
-                ) : (
-                  <img src={menuDot} alt="three dots symbol"></img>
-                )}
-              </button>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+      <div
+        className={`navbar-wrapper-for-mobile ${navBarOpen ? "expanded" : ""}`}
+      >
+        <nav className="navbar-for-mobile">
+          <span className="nav-logo-mobile">
+            <img src={deptLogoBlack} alt="DEPT logo black"></img>
+          </span>
+          <div className="nav-menu-out-for-mobile">
+            <HorizontalMenuMobile
+              handleClick={handleClick}
+              navBarOpen={navBarOpen}
+            />
+          </div>
+        </nav>
+        <NavMenuMobile
+          closeMenu={closeMenu}
+          navBarOpen={navBarOpen}
+          setNavBarOpen={setNavBarOpen}
+        />
+      </div>
+    </>
   );
 }
