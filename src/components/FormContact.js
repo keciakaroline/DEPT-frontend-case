@@ -19,7 +19,6 @@ export default function FormContact() {
     e.preventDefault();
     setFormError(validationForm(FormValue));
     setSubmit(true);
-    alert("Email sent");
   };
 
   const validationForm = (value) => {
@@ -41,6 +40,7 @@ export default function FormContact() {
   useEffect(() => {
     if (Object.keys(formError).length === 0 && isSubmit) {
       console.log(FormValue);
+      alert("Email sent");
     }
   }, [formError, FormValue, isSubmit]);
 
@@ -82,7 +82,6 @@ export default function FormContact() {
               name="message"
               autoComplete="none"
               value={FormValue.message}
-              onChange={handleValidation}
             />
           </div>
 
