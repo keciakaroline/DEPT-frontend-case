@@ -19,6 +19,7 @@ export default function FormContact() {
     e.preventDefault();
     setFormError(validationForm(FormValue));
     setSubmit(true);
+    alert("Email sent");
   };
 
   const validationForm = (value) => {

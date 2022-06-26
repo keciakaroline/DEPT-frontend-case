@@ -2,6 +2,12 @@
   display: none;
 }
 
+
+.legends {
+  left: 10% !important;
+  bottom: 5.25rem !important;
+}
+
 .client-cards-out {
   display: flex;
   flex-direction: row;
@@ -21,15 +27,14 @@
   justify-content: flex-end;
   align-items: flex-start;
   padding: 32px;
-  /* gap: 16px; */
 
   width: 100%;
   height: 568px;
   background-color: #010101;
 }
 
-.img-set-one img,
-.img-set-two img {
+.img-set-one,
+.img-set-two {
   width: 100%;
   height: 568px;
 }

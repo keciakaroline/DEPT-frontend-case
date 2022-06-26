@@ -10,13 +10,39 @@
   background: #0c0c0c;
 }
 
+.big-menu-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
 .dropdown-left {
   /* Group 14 */
   position: absolute;
-  width: 131px;
+  width: 215px;
   height: 171px;
-  left: 55px;
-  top: 102px;
+  background-color: #121212;
+}
+
+.dropdown-right {
+  text-align: right;
+  width: 100%;
+  padding: 30px;
+}
+
+.dropdown-right ul {
+  list-style: none;
+  padding-left: 0 !important;
+}
+
+.dropdown-right ul li {
+  border-bottom: 1px solid #A3A3A3;
+  padding: 2px;
+}
+
+.dropdown-right ul li:hover::before, .dropdown-left ul li:hover::before {
+  content:url('./design/Polygon.png');
+  padding-right: 10px;
 }
 
 /* add symbol in front of the name */
@@ -36,12 +62,6 @@
 
 .dropdown-left-land {
   /* Landen */
-  position: absolute;
-  width: 55px;
-  height: 16px;
-  left: 55px;
-  top: 102px;
-
   /* XXS(Body) */
   font-family: "Maison Neue";
   font-style: normal;
@@ -55,12 +75,6 @@
   color: rgba(255, 255, 255, 0.5);
 }
 .dropdown-left-item {
-  position: absolute;
-  width: 91px;
-  height: 18px;
-  left: 76px;
-  top: 145px;
-
   /* CTA(Book) */
   font-family: "Maison Neue";
   font-style: normal;
