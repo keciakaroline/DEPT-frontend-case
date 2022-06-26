@@ -39,10 +39,6 @@
   justify-content: flex-end;
 }
 
-/* .nav-menu.showMenu {
-  display: none;
-} */
-
 .nav-menu {
   display: flex;
   flex-direction: row;
@@ -129,10 +125,6 @@
     height: 18px;
     justify-content: flex-end;
   }
-
-  /* .nav-menu.showMenu {
-  display: none;
-} */
 
   .navbar-for-mobile .nav-menu {
     position: absolute;

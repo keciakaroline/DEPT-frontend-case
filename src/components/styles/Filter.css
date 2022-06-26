@@ -15,7 +15,6 @@
 }
 
 .filter-show-me p {
-  /* position: absolute; */
   width: 209px;
   height: 26px;
   left: 32px;
@@ -40,7 +39,6 @@
 }
 
 .filter-groups div {
-  /* position: absolute; */
   width: 1103px;
   height: 26px;
   left: 305px;
@@ -48,7 +46,6 @@
 }
 
 .filter-groups p {
-  /* position: absolute; */
   width: 1103px;
   height: 26px;
   left: 305px;

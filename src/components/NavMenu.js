@@ -88,7 +88,7 @@ export function HorizontalMenu({ closeMenu, handleClick, navBarOpen }) {
   );
 }
 
-export default function NavMenu({ navBarOpen, setNavBarOpen, closeMenu }) {
+export default function NavMenu({ navBarOpen, closeMenu }) {
   return (
     <>
       {navBarOpen ? (

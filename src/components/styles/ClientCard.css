@@ -2,7 +2,6 @@
   display: none;
 }
 
-
 .legends {
   left: 10% !important;
   bottom: 5.25rem !important;
@@ -41,7 +40,6 @@
 
 .client-card-set-one .legends .title,
 .client-card-set-two .legends .title {
-  /* width: 656px; */
   width: 530px;
   height: 96px;
   font-family: "Roboto", sans-serif;

@@ -213,7 +213,7 @@ button.btn-form {
     margin-left: 0px;
     display: flex;
     flex-direction: column;
-    /* padding: 48px 36px; */
+
     align-items: flex-start;
     gap: 36px;
   }
@@ -221,8 +221,7 @@ button.btn-form {
   .form .text-name-email {
     display: flex;
     flex-direction: column;
-    /* gap: 0; */
-    /* position: absolute; */
+
     width: 332px;
     height: 100px;
     left: 30px;
