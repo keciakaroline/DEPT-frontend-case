@@ -1,3 +1,7 @@
+.carousel-mobile {
+  display: none;
+}
+
 .client-cards-out {
   display: flex;
   flex-direction: row;
@@ -29,8 +33,8 @@
   height: 568px;
 }
 
-.client-card-set-one .legends h2,
-.client-card-set-two .legends h2 {
+.client-card-set-one .legends .title,
+.client-card-set-two .legends .title {
   width: 656px;
   height: 96px;
   font-family: "Roboto", sans-serif;
@@ -42,8 +46,8 @@
   color: #ffffff;
 }
 
-.client-card-set-one .legends p,
-.client-card-set-two .legends p {
+.client-card-set-one .legends .brand,
+.client-card-set-two .legends .brand {
   width: 656px;
   height: 16px;
   font-family: "Roboto", sans-serif;
@@ -88,4 +92,62 @@ div.read-more {
 .read-more .btnDot {
   width: 12px;
   height: 12px;
+}
+
+@media screen and (max-width: 410px) {
+  .client-card-set-one,
+  .client-card-set-two {
+    display: none !important;
+  }
+
+  .carousel-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 410px;
+    height: 484.5px;
+  }
+
+  .img-set-three img {
+    width: 410px;
+    height: 484.5px;
+  }
+
+  .carousel-mobile .legends .title {
+    display: flex;
+    margin-bottom: 20px;
+    width: 362px;
+    height: 52px;
+    text-align: left;
+
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .carousel-mobile .legends .brand {
+    float: left;
+    width: auto;
+    height: 16px;
+    align-items: start;
+    justify-content: start;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  div.read-more {
+    display: none;
+  }
+
+  .read-more a {
+    display: none;
+  }
+
+  .read-more .btnDot {
+    display: none;
+  }
 }

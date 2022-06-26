@@ -58,7 +58,7 @@ export default function FormContact() {
                 value={FormValue.name}
                 onChange={handleValidation}
               />
-              <p>{formError.name}</p>
+              <p className="error-msg">{formError.name}</p>
             </div>
 
             <div className="text-email">
@@ -70,7 +70,7 @@ export default function FormContact() {
                 value={FormValue.email}
                 onChange={handleValidation}
               />
-              <p>{formError.email}</p>
+              <p className="error-msg">{formError.email}</p>
             </div>
           </div>
 

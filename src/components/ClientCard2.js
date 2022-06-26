@@ -17,8 +17,8 @@ export default function ClientCard2() {
             alt="Lighting post"
           />
           <Carousel.Caption className="legends">
-            <p>{imagesSet3[0].brand}</p>
-            <h2>{imagesSet3[0].title}</h2>
+            <p className="brand">{imagesSet3[0].brand}</p>
+            <h2 className="title">{imagesSet3[0].title}</h2>
             <div className="read-more">
               <img
                 src={btnDot}
@@ -36,8 +36,8 @@ export default function ClientCard2() {
             alt="Cartoon of a boy holding a map"
           />
           <Carousel.Caption className="legends">
-            <p>{imagesSet3[1].brand}</p>
-            <h2>{imagesSet3[1].title}</h2>
+            <p className="brand">{imagesSet3[1].brand}</p>
+            <h2 className="title">{imagesSet3[1].title}</h2>
             <div className="read-more">
               <img
                 src={btnDot}
@@ -58,8 +58,8 @@ export default function ClientCard2() {
             alt="Man using headphones"
           />
           <Carousel.Caption className="legends">
-            <p>{imagesSet4[0].brand}</p>
-            <h2>{imagesSet4[0].title}</h2>
+            <p className="brand">{imagesSet4[0].brand}</p>
+            <h2 className="title">{imagesSet4[0].title}</h2>
             <div className="read-more">
               <img
                 src={btnDot}
@@ -77,8 +77,86 @@ export default function ClientCard2() {
             alt="Chocomel pictures"
           />
           <Carousel.Caption className="legends">
-            <p>{imagesSet4[1].brand}</p>
-            <h2>{imagesSet4[1].title}</h2>
+            <p className="brand">{imagesSet4[1].brand}</p>
+            <h2 className="title">{imagesSet4[1].title}</h2>
+            <div className="read-more">
+              <img
+                src={btnDot}
+                className="btnDot"
+                alt="dot symbol in front of 'read more'"
+              />
+              <a href="/">Read more</a>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+
+      <Carousel fade={true} pause={false} className="carousel-mobile">
+        <Carousel.Item interval={2000}>
+          <img
+            className="img-set-three"
+            src={imagesSet3[0].img}
+            alt="People playing in the water"
+          />
+          <Carousel.Caption className="legends">
+            <p className="brand">{imagesSet3[0].brand}</p>
+            <h2 className="title">{imagesSet3[0].title}</h2>
+            <div className="read-more">
+              <img
+                src={btnDot}
+                className="btnDot"
+                alt="dot symbol in front of 'read more'"
+              />
+              <a href="/">Read more</a>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item interval={2000}>
+          <img
+            className="img-set-three"
+            src={imagesSet3[1].img}
+            alt="People speaking about numbers"
+          />
+          <Carousel.Caption className="legends">
+            <p className="brand">{imagesSet3[1].brand}</p>
+            <h2 className="title">{imagesSet3[1].title}</h2>
+            <div className="read-more">
+              <img
+                src={btnDot}
+                className="btnDot"
+                alt="dot symbol in front of 'read more'"
+              />
+              <a href="/">Read more</a>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item interval={2000}>
+          <img className="img-set-three" src={imagesSet4[0].img} alt="Lamps" />
+          <Carousel.Caption className="legends">
+            <p className="brand">{imagesSet4[0].brand}</p>
+            <h2 className="title">{imagesSet4[0].title}</h2>
+            <div className="read-more">
+              <img
+                src={btnDot}
+                className="btnDot"
+                alt="dot symbol in front of 'read more'"
+              />
+              <a href="/">Read more</a>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item interval={2000}>
+          <img
+            className="img-set-three"
+            src={imagesSet4[1].img}
+            alt="Girl looking to a picture at the wall"
+          />
+          <Carousel.Caption className="legends">
+            <p className="brand">{imagesSet4[1].brand}</p>
+            <h2 className="title">{imagesSet4[1].title}</h2>
             <div className="read-more">
               <img
                 src={btnDot}

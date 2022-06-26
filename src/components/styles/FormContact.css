@@ -115,7 +115,7 @@ form .text-name-email .text-email label {
   color: #000000;
 }
 
-p {
+.error-msg {
   color: red;
 }
 
