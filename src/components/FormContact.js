@@ -85,7 +85,12 @@ export default function FormContact() {
             />
           </div>
 
-          <button className="btn-form" name="button">
+          <button
+            className="btn-form"
+            id="btn-form"
+            name="button"
+            type="submit"
+          >
             SEND
           </button>
         </form>
