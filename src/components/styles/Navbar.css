@@ -118,48 +118,23 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* padding: 42px 400px 16px 50px; */
     gap: 0px;
     position: relative;
     align-content: center;
   }
 
   .nav-logo-mobile {
-    /* position: absolute;
-    left: 3.9%;
-    right: 83.21%;
-    top: 30.36%;
-    bottom: 42.86%; */
     width: 88.04px;
     height: 25px;
   }
 
-  /* .nav-logo-mobile.expanded {
-    position: absolute;
-    left: 3.9%;
-    right: 83.21%;
-    top: 9.54%;
-    bottom: 89.29%;
-  } */
-
   .nav-menu-out-for-mobile {
     display: flex;
     flex-direction: row;
-    /* align-content: center; */
-    /* position: relative; */
+
     align-items: flex-start;
     list-style-type: none;
     gap: 48px;
     padding: 0px;
-
-    /* position: absolute;
-    left: 71.12%;
-    right: 3.9%;
-    top: 32.14%;
-    bottom: 35.71%; */
   }
-  /* .nav-menu-out-for-mobile.expanded {
-    position: relative;
-    padding-top: 70px;
-  } */
 }
